@@ -106,6 +106,11 @@ class MainActivity :
                 timePicker.show(supportFragmentManager, "timePicker")
             }
 
+            btnShowCustomDialog.setOnClickListener {
+                val dialog = DialogExit()
+                dialog.show(supportFragmentManager, "dialogExit")
+            }
+
             btnShowAlertDialog.setOnClickListener {
                 val builder = AlertDialog.Builder(this@MainActivity)
                 builder.setTitle("Keluar")
